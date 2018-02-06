@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Floratalk</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,9 +11,12 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      	<!--<link rel="stylesheet" href="css/normalize.css">-->
+       	<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -21,7 +24,124 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-
+		<header>
+			<nav>
+				<div class="row">
+					<img src="img/logo.png" alt="Floratalk logo" class="logo">
+					<p class="logo-write-up">Floratalk</p>
+					<ul class="main-nav">
+						<b>
+						<li><a href="#">home</a></li>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">products</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">contact us</a></li>
+						</b>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<section class="top-header">
+			<div class="hero-text-box">
+				<h1>
+					<ul class="hero-box-content">
+						<b>
+						<li class="content-color">floratalk</li>
+						<li>something</li>
+						</b>
+					</ul>
+				</h1>
+				<p>natural health/ health products/ trends</p>
+				<a class="btn btn-full" href="#">WHAT WE DO</a>
+				<a class="btn btn-ghost" href="#">OUR PRODUCTS</a>
+			</div>
+		</section>
+		<section class="about-us">
+			<div class="row">
+				<h2>
+					<ul>
+						<b>
+						<li>about</li>
+						<li class="content-color">us</li>
+						</b>
+					</ul>
+				</h2>
+				<b>
+				<p class="first long-copy">
+					In today’s world so many are seeking a healthy and vibrant life, and nature has proofed that it has all that it takes to give us that flourishing, healthy and vibrant life.As a nutritional and health enthusiast, floratalk presents to you the numerous health and nutritional benefits of nature all around us.
+				</p>
+				
+				<p class="long-copy">
+					At floratalk we share motivational, inspiring health information and also make available to you healthy products for you and your family to enjoy your desired healthy life.
+				</p>
+				</b>
+				<div class="read-more">
+					<a class="btn btn-read-more h" href="#">READ MORE</a>
+				</div>
+			</div>
+		</section>
+		<section class="our-products">
+			<div class="row">
+				<h2>
+					<ul>
+						<b>
+						<li class="content-color">our</li>
+						<li class="product-color">products</li>
+						</b>
+					</ul>
+				</h2>
+			</div>
+			<div class="row products-span">
+				<div class="col span-1-of-3 box">
+					<img src="img/first%20image.png" alt="c9 nutritional cleansing product">
+					<div class=product-box><p>c9 nutritional cleansing product</p></div>
+				</div>
+				<div class="col span-1-of-3 box">
+					<img src="img/second%20image.png" alt="c9 nutritional cleansing product">
+					<div class=product-box><p>c9 nutritional cleansing product</p></div>
+				</div>
+				<div class="col span-1-of-3 box">
+					<img src="img/third%20image.png" alt="c9 nutritional cleansing product">
+				<div class=product-box><p>c9 nutritional cleansing product</p></div>
+				</div>
+			</div>
+			<div class="more-products">
+				<a class="btn btn-more-products" href="#">MORE PRODUCT</a>
+			</div>
+		</section>
+		
+		<section class="our-partners">
+			<div class="row">
+				<h2>our partners</h2>
+			</div>
+			<div class="col span-1-of-4 box">
+				<img>
+			</div>
+		</section>
+		
+		<section class="get-in-touch">
+			<div class="row">
+				<h2 id="in-touch">get in touch</h2>
+			</div>
+			<form method="post" action="#" class="contact-form">
+				<div class="col span-1-of-2">
+					<input type="text" id="name" placeholder="Name" required>
+				</div>
+				<div class="col span-1-of-2">
+					<input type="text" id="email" placeholder="Email" required>
+				</div>
+				<div class="col span-1-of-2">
+					<input type="text" id="subject" placeholder="Subject" required>
+				</div>
+				<div class="col span-1-of-2">
+					<input type="text" id="website" placeholder="Website" required>
+				</div>
+				<div class="col span-2-of-3">
+					<textarea name="message" placeholder="Message"></textarea>
+				</div>
+			</form>
+		</section>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

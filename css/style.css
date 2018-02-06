@@ -1,0 +1,338 @@
+/*---------------------------------------*/
+/*BASIC SETUPS*/ 
+/*---------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, 
+body {
+	background-color: #fff;
+	color: #222;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+/*---------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*---------------------------------------*/
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+section{
+	padding: 80px 0;
+}
+
+.box{
+	padding: 1%;
+}
+/*-----HEADINGS-----*/
+
+h1,h2,h3 {
+	text-transform: uppercase;
+	
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 290%;
+	word-spacing: 1px;
+	letter-spacing: normal;
+}
+
+h2{
+	word-spacing: 1px;
+	text-align: center;
+	font-size: 290%;
+	margin-bottom: 30px;
+	letter-spacing: normal;
+}
+
+h3{
+	font-size: 110%;
+	margin-bottom: 25px;
+	color: #fff;
+}
+
+h2:after{
+	display: block;
+	background-color: #2c9dff;
+	height: 4px;
+	content: "";
+	width: 180px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+/*---------------------------------------*/
+/*HEADER*/
+/*---------------------------------------*/
+nav {
+	height: 15vh;
+	background-attachment: fixed;
+	background-position: center; 
+} 
+
+.top-header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/hero.jpeg);
+	background-position: center; 
+	height: 105vh; 
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.top-header li{
+}
+
+.top-header p{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 120%;
+	margin-bottom: 20px;
+}
+
+/*------Logo------*/
+.logo {
+	height: 85px;
+	width: auto;
+	float: left;
+	margin-top: 10px;
+}
+
+.logo-write-up{
+	float:left;
+	margin-top: 38px;
+	padding-left: 15px;
+	font-size: 140%;
+	color: #555;
+}
+
+.hero-text-box {
+	position:absolute
+	width: 1140px;    
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.hero-box-content li{
+	display: inline-block;
+}
+.content-color{
+	color: #2c9dff;
+	
+}
+
+/*------Main nav------*/
+
+.main-nav {
+	float: right;
+	list-style: none; 
+	margin-top: 40px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 70%;	
+	transition: border-bottom 0.2s; 
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	color: #2c9dff;
+}
+
+/*------Buttons------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-weight: 300px;
+	text-decoration: none;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;	
+}
+
+btn:hover,
+.btn:active, 
+input[type=submit]:hover,
+input[type=submit]:active {
+	background-color: #cf6d17;
+}
+
+.btn-full{
+	background-color: #2c9dff;
+	color: #fff;
+	font-size: 70%;
+	border: 2px solid #2c9dff;
+}
+.btn-ghost{
+	border: 2px solid #2c9dff;
+	color: #fff;
+	font-size: 70%;
+	margin-left: 10px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+	background-color: #017ae3;
+	border: 2px solid #017ae3;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+	background-color: #2c9dff;
+	color: #fff;
+}
+
+/*---------------------------------------*/
+/*SECTION ABOUT US*/
+/*---------------------------------------*/
+.about-us li{
+	display: inline-block;
+	list-style: none;
+}
+
+.long-copy{
+	line-height: 150%;
+	width: auto;
+	font-size: 115%;
+	text-align: center;
+}
+.first{
+	margin-bottom: 30px;
+}
+.btn-read-more {
+	background-color: #2c9dff;
+	color: #fff;
+	font-size: 110%; 
+	height: 85px;
+	width: 300px;
+	margin-top: 70px;
+	
+}
+.read-more{
+	text-align: center;	
+}
+/*---------------------------------------*/
+/*SECTION OUR PRODUCTS*/
+/*---------------------------------------*/
+.our-products{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/hero2.jpeg); 
+	background-position: center; 
+	background-attachment: fixed;
+	background-size: cover;	
+}
+
+.product-color{
+	color: #fff;
+}
+
+.box img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.our-products li{
+	list-style-image: none;
+	display: inline-block;
+}
+.product-box{
+	height: 100px;
+	padding-top: 40px;
+	
+}
+.product-box p{
+	text-transform: uppercase;
+	color: #555;
+	font-size: 100%;
+	margin: 40px;
+	text-align: center;
+}
+.products-span div{
+	background-color: #fff;
+	padding: 0;		
+}
+
+.btn-more-products{
+	border: 2px solid #2c9dff;
+	color: #fff;
+	font-size: 110%; 
+	height: 85px;
+	width: 300px;
+	margin-top: 70px;
+}
+.our-products a{
+	text-align: center;
+	padding: 0px;
+}
+
+.more-products{
+	text-align: center;
+}
+
+/*---------------------------------------*/
+/*SECTION OUR PARTNERS*/
+/*---------------------------------------*/
+.our-partners{
+	background-color: #cfe3f4;
+}
+
+/*---------------------------------------*/
+/*SECTION GET IN TOUCH*/
+/*---------------------------------------*/
+.get-in-touch{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/hero2.jpeg);
+	background-position: center; 
+	background-attachment: fixed;
+	background-size: cover;
+} 
+#in-touch{
+	color:#fff;
+	
+}
+/*------Forms------*/
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=subject],
+input[type=website],
+select,
+textarea{
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea{
+	height: 100px;
+}

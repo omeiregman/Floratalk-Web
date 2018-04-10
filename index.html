@@ -9,6 +9,8 @@
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <!-- Place favicon.ico in the root directory -->
 
       	<!--<link rel="stylesheet" href="css/normalize.css">-->
@@ -27,37 +29,38 @@
 		<header>
 			<nav>
 				<div class="row">
-					<img src="img/logo.png" alt="Floratalk logo" class="logo">
+					<a href="index.html"><img src="img/logo.png" alt="Floratalk logo" class="logo"></a>
 					<p class="logo-write-up">Floratalk</p>
 					<ul class="main-nav">
 						<b>
-						<li><a href="#">home</a></li>
-						<li><a href="#">about us</a></li>
-						<li><a href="#">products</a></li>
-						<li><a href="#">blog</a></li>
-						<li><a href="#">contact us</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="https://flora-t.myshopify.com/" target="_blank">Store</a></li>
+						<li><a href="#products">Products</a></li>
+						<li><a href="https://flora-t.myshopify.com/blogs/health-news" target="_blank">Blog</a></li>
+						<li><a href="#get-in-touch">Contact us</a></li>
 						</b>
 					</ul>
 				</div>
 			</nav>
 		</header>
-		
+
 		<section class="top-header">
 			<div class="hero-text-box">
 				<h1>
 					<ul class="hero-box-content">
 						<b>
-						<li class="content-color">floratalk</li>
-						<li>something</li>
+						<li class="content-color">We love </li>
+						<li>good health</li>
 						</b>
 					</ul>
 				</h1>
-				<p>natural health/ health products/ trends</p>
-				<a class="btn btn-full" href="#">WHAT WE DO</a>
-				<a class="btn btn-ghost" href="#">OUR PRODUCTS</a>
+				<p>Floratalk/ natural health/ health products/ health news</p>
+				<a class="btn btn-full" href="#about">WHAT WE DO</a>
+				<a class="btn btn-ghost" href="#products">OUR PRODUCTS</a>
 			</div>
 		</section>
-		<section class="about-us">
+
+		<section class="about-us" id="about">
 			<div class="row">
 				<h2>
 					<ul>
@@ -67,21 +70,21 @@
 						</b>
 					</ul>
 				</h2>
-				<b>
 				<p class="first long-copy">
-					In today’s world so many are seeking a healthy and vibrant life, and nature has proofed that it has all that it takes to give us that flourishing, healthy and vibrant life.As a nutritional and health enthusiast, floratalk presents to you the numerous health and nutritional benefits of nature all around us.
-				</p>
-				
-				<p class="long-copy">
-					At floratalk we share motivational, inspiring health information and also make available to you healthy products for you and your family to enjoy your desired healthy life.
-				</p>
-				</b>
-				<div class="read-more">
+					In today’s world so many are seeking a healthy and vibrant life, and nature has proofed that it has all that it
+          takes to give us that flourishing, healthy and vibrant life.As a nutritional and health enthusiast, floratalk
+          presents to you the numerous health and nutritional benefits of nature all around us.<br/>
+
+					At floratalk we share motivational, inspiring health information and also make available to you healthy
+          products for you and your family to enjoy your desired healthy life.
+        </p>
+				<!-- <div class="read-more">
 					<a class="btn btn-read-more h" href="#">READ MORE</a>
-				</div>
+				</div> -->
 			</div>
 		</section>
-		<section class="our-products">
+
+		<section class="our-products" id="products">
 			<div class="row">
 				<h2>
 					<ul>
@@ -92,56 +95,75 @@
 					</ul>
 				</h2>
 			</div>
+
 			<div class="row products-span">
 				<div class="col span-1-of-3 box">
 					<img src="img/first%20image.png" alt="c9 nutritional cleansing product">
-					<div class=product-box><p>c9 nutritional cleansing product</p></div>
+					<div class="product-box"><p>c9 nutritional cleansing product</p></div>
 				</div>
 				<div class="col span-1-of-3 box">
 					<img src="img/second%20image.png" alt="c9 nutritional cleansing product">
-					<div class=product-box><p>c9 nutritional cleansing product</p></div>
+					<div class="product-box"><p>c9 nutritional cleansing product</p></div>
 				</div>
 				<div class="col span-1-of-3 box">
 					<img src="img/third%20image.png" alt="c9 nutritional cleansing product">
-				<div class=product-box><p>c9 nutritional cleansing product</p></div>
+				<div class="product-box"><p>c9 nutritional cleansing product</p></div>
 				</div>
 			</div>
 			<div class="more-products">
-				<a class="btn btn-more-products" href="#">MORE PRODUCT</a>
+				<a class="btn btn-more-products" href="https://flora-t.myshopify.com/collections/all" target="_blank">MORE PRODUCTS</a>
 			</div>
 		</section>
-		
-		<section class="our-partners">
+
+		<!-- <section class="our-partners">
 			<div class="row">
 				<h2>our partners</h2>
 			</div>
 			<div class="col span-1-of-4 box">
 				<img>
 			</div>
-		</section>
-		
-		<section class="get-in-touch">
+		</section> -->
+
+		<section class="get-in-touch" id="get-in-touch">
 			<div class="row">
 				<h2 id="in-touch">get in touch</h2>
 			</div>
-			<form method="post" action="#" class="contact-form">
-				<div class="col span-1-of-2">
-					<input type="text" id="name" placeholder="Name" required>
-				</div>
-				<div class="col span-1-of-2">
-					<input type="text" id="email" placeholder="Email" required>
-				</div>
-				<div class="col span-1-of-2">
-					<input type="text" id="subject" placeholder="Subject" required>
-				</div>
-				<div class="col span-1-of-2">
-					<input type="text" id="website" placeholder="Website" required>
-				</div>
-				<div class="col span-2-of-3">
-					<textarea name="message" placeholder="Message"></textarea>
-				</div>
-			</form>
+
+      <form method="post" action="#" class="contact-form">
+        <fieldset>
+          <div class="row">
+            <div class="col span-1-of-2">
+              <input type="text" id="firstname" placeholder="First Name" required>
+            </div>
+            <div class="col span-1-of-2">
+              <input type="text" id="lastname" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-2">
+              <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="col span-1-of-2">
+              <input type="text" id="phone" placeholder="Phone Number" required>
+            </div>
+          </div>
+          <div class="row ">
+            <textarea name="message" placeholder="Message"></textarea>
+          </div>
+          <div class="read-more">
+  					<a class="btn btn-read-more h" href="#">Submit</a>
+  				</div>
+        </fieldset>
+      </form>
 		</section>
+
+    <!-- <section class="footer-section">
+      <div class="row">
+
+          Floratalk &copy; 2018
+
+      </div>
+    </section> -->
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
